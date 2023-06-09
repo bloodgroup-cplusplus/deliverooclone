@@ -3,6 +3,12 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { SafeAreaView } from 'react-native'
 import { Image } from 'react-native'
+import {
+    UserIcon,
+    ChevronDownIcon,
+    SearchIcon,
+    AdjustmentsIcon
+} from "react-native-heroicons/outline"
 
 const HomeScreen = () => {
     const navigation=useNavigation();
@@ -28,7 +34,9 @@ const HomeScreen = () => {
         {/* everything is flex column in react native */}
         <View>
             <Text className="font-bold text-gray-400 text-x5">Deliver Now</Text>
-            <Text className="font-bold text-xl">Current Location</Text>
+            <Text className="font-bold text-xl">Current Location
+            <ChevronDownIcon size={20} color="#00CCBB"/>
+            </Text>
         </View>
 
 
